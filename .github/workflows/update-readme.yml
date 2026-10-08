@@ -1,0 +1,48 @@
+name: Update README
+
+on:
+  push:
+    branches: [main]          # runs every time TensorTonic (or you) pushes a solution
+  schedule:
+    - cron: "0 17 * * *"      # daily at 00:00 Vietnam time (UTC+7) to refresh "last 7 days" stats
+  workflow_dispatch:          # manual "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for solve dates)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate README
+        run: python scripts/update_readme.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README already up to date."
+            exit 0
+          fi
+          git commit -m "docs: auto-update README [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1

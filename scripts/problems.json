@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {"id": "linear-algebra", "name": "Linear Algebra & Vectors", "short": "Linear Algebra", "emoji": "📐"},
+    {"id": "activations", "name": "Activation Functions", "short": "Activations", "emoji": "⚡"},
+    {"id": "layers", "name": "Neural Network Layers", "short": "NN Layers", "emoji": "🧱"},
+    {"id": "optimizers", "name": "Optimizers & Training", "short": "Optimizers", "emoji": "🚀"},
+    {"id": "losses", "name": "Loss Functions", "short": "Losses", "emoji": "📉"},
+    {"id": "metrics", "name": "Evaluation Metrics", "short": "Metrics", "emoji": "📏"},
+    {"id": "classical", "name": "Classical Machine Learning", "short": "Classical ML", "emoji": "🌳"},
+    {"id": "stats", "name": "Probability & Statistics", "short": "Statistics", "emoji": "🎲"},
+    {"id": "features", "name": "Feature Engineering", "short": "Features", "emoji": "🛠️"},
+    {"id": "nlp", "name": "NLP & Transformers", "short": "NLP", "emoji": "🔤"},
+    {"id": "cv", "name": "Computer Vision", "short": "Vision", "emoji": "🖼️"},
+    {"id": "rl", "name": "Reinforcement Learning", "short": "RL", "emoji": "🕹️"},
+    {"id": "papers", "name": "Paper Implementations", "short": "Papers", "emoji": "📄"},
+    {"id": "new", "name": "Recently Added (uncategorized)", "short": "Uncategorized", "emoji": "🆕"}
+  ],
+
+  "keyword_rules": [
+    ["loss", "losses"],
+    ["optimizer", "optimizers"], ["scheduler", "optimizers"], ["gradient", "optimizers"], ["momentum", "optimizers"],
+    ["activation", "activations"], ["relu", "activations"], ["gelu", "activations"], ["sigmoid", "activations"], ["softmax", "activations"],
+    ["attention", "nlp"], ["token", "nlp"], ["text", "nlp"], ["word", "nlp"], ["embedding", "nlp"], ["transformer", "nlp"], ["bpe", "nlp"],
+    ["conv", "layers"], ["pool", "layers"], ["layer", "layers"], ["norm", "layers"], ["lstm", "layers"], ["gru", "layers"], ["rnn", "layers"], ["dropout", "layers"],
+    ["matrix", "linear-algebra"], ["vector", "linear-algebra"], ["eigen", "linear-algebra"], ["svd", "linear-algebra"],
+    ["f1", "metrics"], ["precision", "metrics"], ["recall", "metrics"], ["auc", "metrics"], ["score", "metrics"], ["accuracy", "metrics"],
+    ["image", "cv"], ["box", "cv"], ["iou", "cv"], ["nms", "cv"],
+    ["policy", "rl"], ["reward", "rl"], ["q-learning", "rl"], ["bellman", "rl"],
+    ["regression", "classical"], ["k-means", "classical"], ["knn", "classical"], ["tree", "classical"], ["pca", "classical"],
+    ["probability", "stats"], ["distribution", "stats"], ["pmf", "stats"], ["mean", "stats"],
+    ["scaling", "features"], ["transform", "features"], ["encoding", "features"]
+  ],
+
+  "problems": {
+    "dot-product": {"title": "Dot Product", "category": "linear-algebra", "idea": "Sum of element-wise products"},
+    "euclidean-distance": {"title": "Euclidean Distance", "category": "linear-algebra", "idea": "√Σ(xᵢ − yᵢ)²"},
+    "cosine-similarity": {"title": "Cosine Similarity", "category": "linear-algebra", "idea": "Normalized dot product, zero-vector safe"},
+    "vector-norm-3d": {"title": "3D Vector Norm", "category": "linear-algebra", "idea": "L2 norm"},
+    "normalize-3d": {"title": "Normalize 3D Vectors", "category": "linear-algebra", "idea": "Unit vectors, zero-norm handling"},
+    "angle-between-3d": {"title": "Angle Between 3D Vectors", "category": "linear-algebra", "idea": "arccos with clamped cosine"},
+    "matrix-transpose": {"title": "Matrix Transpose", "category": "linear-algebra", "idea": "No built-in helpers"},
+    "matrix-trace": {"title": "Matrix Trace", "category": "linear-algebra", "idea": "Sum of the main diagonal"},
+    "matrix-inverse": {"title": "Matrix Inverse", "category": "linear-algebra", "idea": "Singular / non-square detection"},
+    "matrix-normalization": {"title": "Matrix Normalization", "category": "linear-algebra", "idea": "Axis-wise norms"},
+    "covariance-matrix": {"title": "Covariance Matrix", "category": "linear-algebra", "idea": "Sample covariance from centered data"},
+
+    "sigmoid-numpy": {"title": "Sigmoid", "category": "activations", "idea": "Stable for large ± inputs"},
+    "tanh-activation": {"title": "Tanh", "category": "activations", "idea": "Bounded in (−1, 1)"},
+    "relu-activation": {"title": "ReLU", "category": "activations", "idea": "max(0, x)"},
+    "leaky-relu": {"title": "Leaky ReLU", "category": "activations", "idea": "Configurable negative slope α"},
+    "elu-activation": {"title": "ELU", "category": "activations", "idea": "Exponential negative branch"},
+    "selu-activation": {"title": "SELU", "category": "activations", "idea": "Self-normalizing scale"},
+    "gelu": {"title": "GELU", "category": "activations", "idea": "Gaussian error linear unit"},
+    "swish-activation": {"title": "Swish", "category": "activations", "idea": "x · σ(x)"},
+    "softmax-function": {"title": "Softmax", "category": "activations", "idea": "Max-shift for numerical stability"},
+
+    "linear-layer-forward": {"title": "Linear Layer Forward", "category": "layers", "idea": "xW + b"},
+    "batch-normalization": {"title": "Batch Normalization", "category": "layers", "idea": "Feature-wise stats, γ / β"},
+    "dropout-training": {"title": "Dropout (Training)", "category": "layers", "idea": "Inverted dropout scaling"},
+    "simple-cnn-layer": {"title": "Simple CNN Layer", "category": "layers", "idea": "Batched multi-channel convolution"},
+    "maxpool-forward": {"title": "Max Pooling", "category": "layers", "idea": "Window + stride"},
+    "global-avg-pooling": {"title": "Global Average Pooling", "category": "layers", "idea": "Per-channel spatial mean"},
+    "rnn-step-forward": {"title": "RNN Step Forward", "category": "layers", "idea": "tanh recurrent cell"},
+    "gru-cell-forward": {"title": "GRU Cell Forward", "category": "layers", "idea": "Reset / update / candidate gates"},
+
+    "gradient-descent-quadratic": {"title": "Gradient Descent (1D Quadratic)", "category": "optimizers", "idea": "Iterative parameter updates"},
+    "adagrad-optimizer": {"title": "AdaGrad", "category": "optimizers", "idea": "Accumulated squared gradients"},
+    "rmsprop-optimizer": {"title": "RMSProp", "category": "optimizers", "idea": "Exponential moving average of g²"},
+    "adam-optimizer": {"title": "Adam", "category": "optimizers", "idea": "Moments + bias correction"},
+    "nadam-optimizer": {"title": "Nadam", "category": "optimizers", "idea": "Adam + Nesterov momentum"},
+    "gradient-clipping": {"title": "Gradient Clipping", "category": "optimizers", "idea": "Global L2-norm clipping"},
+    "linear-lr-scheduler": {"title": "Linear LR Scheduler", "category": "optimizers", "idea": "Linear decay schedule"},
+
+    "mean-squared-error": {"title": "Mean Squared Error", "category": "losses", "idea": "Mean of squared residuals"},
+    "hinge-loss": {"title": "Hinge Loss", "category": "losses", "idea": "Margin-based SVM loss"},
+    "focal-loss": {"title": "Focal Loss", "category": "losses", "idea": "Down-weights easy examples"},
+    "dice-loss": {"title": "Dice Loss", "category": "losses", "idea": "Overlap loss for segmentation"},
+
+    "confusion-matrix-norm": {"title": "Confusion Matrix", "category": "metrics", "idea": "Row / column normalization"},
+    "metrics-f1-micro": {"title": "Micro-F1", "category": "metrics", "idea": "Aggregated TP / FP / FN"},
+    "auc": {"title": "AUC (ROC)", "category": "metrics", "idea": "Trapezoidal integration"},
+    "ndcg": {"title": "NDCG", "category": "metrics", "idea": "Ranking quality at K"},
+    "expected-calibration-error": {"title": "Expected Calibration Error", "category": "metrics", "idea": "Confidence vs. accuracy gap"},
+    "silhouette-score": {"title": "Silhouette Score", "category": "metrics", "idea": "Clustering quality"},
+    "perplexity-computation": {"title": "Perplexity", "category": "metrics", "idea": "Language-model evaluation"},
+
+    "ridge-regression": {"title": "Ridge Regression", "category": "classical", "idea": "Closed-form L2 regularization"},
+    "knn-distance": {"title": "KNN Distance + Lookup", "category": "classical", "idea": "Nearest-neighbor search"},
+    "k-means-assignment": {"title": "K-Means Assignment", "category": "classical", "idea": "Nearest-centroid assignment"},
+    "k-means-centroid-update": {"title": "K-Means Centroid Update", "category": "classical", "idea": "Cluster means, empty clusters"},
+    "information-gain": {"title": "Information Gain", "category": "classical", "idea": "Entropy-based tree splits"},
+    "jaccard-similarity": {"title": "Jaccard Similarity", "category": "classical", "idea": "Intersection over union of sets"},
+
+    "mean-median-mode": {"title": "Mean, Median, Mode", "category": "stats", "idea": "Deterministic tie handling"},
+    "expected-value-discrete": {"title": "Expected Value", "category": "stats", "idea": "Discrete distributions"},
+    "binomial-pmf-cdf": {"title": "Binomial PMF / CDF", "category": "stats", "idea": "Combinatorics + cumulative sums"},
+    "weighted-moving-average": {"title": "Weighted Moving Average", "category": "stats", "idea": "Normalized window weights"},
+
+    "binning": {"title": "Binning", "category": "features", "idea": "Interval edge handling"},
+    "log-transform": {"title": "Log Transform", "category": "features", "idea": "Numerically safe log"},
+    "rank-transform": {"title": "Rank Transform", "category": "features", "idea": "Tie policies"},
+    "robust-scaling": {"title": "Robust Scaling", "category": "features", "idea": "Median + IQR"},
+
+    "word-count-dict": {"title": "Word Count Dictionary", "category": "nlp", "idea": "Token frequencies"},
+    "remove-stopwords": {"title": "Remove Stopwords", "category": "nlp", "idea": "Order-preserving filtering"},
+    "bag-of-words": {"title": "Bag-of-Words", "category": "nlp", "idea": "Count vectors over a vocabulary"},
+    "text-chunking": {"title": "Text Chunking", "category": "nlp", "idea": "Size + overlap (RAG-style)"},
+    "positional-encoding": {"title": "Positional Encoding", "category": "nlp", "idea": "Sinusoidal sin / cos"},
+    "causal-masking": {"title": "Causal Masking", "category": "nlp", "idea": "Block attention to future tokens"},
+
+    "image-histogram": {"title": "Image Histogram", "category": "cv", "idea": "Intensity binning"},
+    "iou-bounding-box": {"title": "IoU (Bounding Box)", "category": "cv", "idea": "Overlap / union area"},
+    "anchor-box-generation": {"title": "Anchor Box Generation", "category": "cv", "idea": "Scales × aspect ratios"},
+
+    "mc-policy-evaluation": {"title": "Monte Carlo Policy Evaluation", "category": "rl", "idea": "Averaging discounted returns"},
+    "policy-gradient-loss": {"title": "Policy Gradient Loss", "category": "rl", "idea": "log π(a|s) · advantage"},
+
+    "alexnet/alexnet-dropout": {"title": "AlexNet · Dropout Regularization", "category": "papers", "idea": "Seeded masks, train vs. inference"},
+    "alexnet/alexnet-relu": {"title": "AlexNet · ReLU Activation", "category": "papers", "idea": "Non-saturating activation"},
+    "alexnet": {"title": "AlexNet (Dropout + ReLU)", "category": "papers", "idea": "Paper building blocks", "url": "https://www.tensortonic.com/research/alexnet/alexnet-dropout", "count": 2}
+  }
+}
