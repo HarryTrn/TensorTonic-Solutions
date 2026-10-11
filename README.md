@@ -58,14 +58,14 @@ Covers the fundamentals most often asked in ML interviews and used daily when re
 
 | 🧩 Solved | 🗂️ Topics | 🔥 Last 7 days | 📅 Last 30 days | 🔄 Last updated |
 |:--:|:--:|:--:|:--:|:--:|
-| **71** | **13** | **+2** | **+2** | 2026-10-10 |
+| **71** | **13** | **+2** | **+2** | 2026-10-11 |
 
 </div>
 
 ```mermaid
 xychart-beta
     title "Cumulative problems solved (weekly)"
-    x-axis ["08/08", "15/08", "22/08", "29/08", "05/09", "12/09", "19/09", "26/09", "03/10", "10/10"]
+    x-axis ["09/08", "16/08", "23/08", "30/08", "06/09", "13/09", "20/09", "27/09", "04/10", "11/10"]
     y-axis "Solved" 0 --> 78
     bar [69, 69, 69, 69, 69, 69, 69, 69, 69, 71]
     line [69, 69, 69, 69, 69, 69, 69, 69, 69, 71]
