@@ -1,6 +1,6 @@
 """
- *     author:  Shinomiyaaa
- *     created: 12.03.2026 10:26:48
+ *     author:  _Shinomiyaa_
+ *     created: 16.10.2026 10:16:19
 """
 def k_means_centroid_update(points, assignments, k):
     """
