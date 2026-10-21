@@ -1,17 +1,11 @@
-"""
- *     author:  _Shinomiyaa_
- *     created: 06.04.2026 07:29:46
-"""
 import numpy as np
 
-def dice_loss(p, y, eps=1e-8):
+def dice_loss(p: list, y: list, eps: float = 1e-8) -> float:
     """
-    Compute Dice Loss for segmentation.
+    Returns the loss as a float.
     """
     # Write code here
     p = np.asarray(p)
     y = np.asarray(y)
-    dice = (2 * np.sum(p*y) + eps) / (np.sum(p) + np.sum(y) + eps)
-    dice_l = 1 - dice
-    return dice_l
+    return float(1 - (2 * np.sum(p*y) + eps) / (np.sum(p) + np.sum(y) + eps))
     pass
