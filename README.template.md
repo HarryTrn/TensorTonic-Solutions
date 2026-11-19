@@ -13,7 +13,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/HarryTrn/TensorTonic-Solutions?style=for-the-badge&color=orange)](https://github.com/HarryTrn/TensorTonic-Solutions/commits/main)
 [![Commit Activity](https://img.shields.io/github/commit-activity/m/HarryTrn/TensorTonic-Solutions?style=for-the-badge&color=blueviolet)](https://github.com/HarryTrn/TensorTonic-Solutions/commits/main)
 
-[![TensorTonic Verified Solutions](https://www.tensortonic.com/api/badge/_shinomiyaa_.svg)](https://www.tensortonic.com/profile/_shinomiyaa_)
+[![TensorTonic Verified Solutions](https://www.tensortonic.com/api/badge/_shikimori_.svg)](https://www.tensortonic.com/profile/_shikimori_)
 
 **[About](#-about)** · **[Progress](#-progress)** · **[Recent](#-recently-solved)** · **[Featured](#-featured-implementations)** · **[Solutions](#-solutions)** · **[Roadmap](#-roadmap)** · **[Connect](#-connect)**
 
@@ -125,7 +125,7 @@ TensorTonic-Solutions/
 
 <div align="center">
 
-[![TensorTonic Profile](https://img.shields.io/badge/TensorTonic-Profile-36BCF7?style=for-the-badge)](https://www.tensortonic.com/profile/_shinomiyaa_)
+[![TensorTonic Profile](https://img.shields.io/badge/TensorTonic-Profile-36BCF7?style=for-the-badge)](https://www.tensortonic.com/profile/_shikimori_)
 [![GitHub](https://img.shields.io/badge/GitHub-HarryTrn-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarryTrn)
 <!-- Replace YOUR_LINKEDIN and YOUR_EMAIL below, or delete these two lines -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN/)
