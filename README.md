@@ -13,7 +13,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/HarryTrn/TensorTonic-Solutions?style=for-the-badge&color=orange)](https://github.com/HarryTrn/TensorTonic-Solutions/commits/main)
 [![Commit Activity](https://img.shields.io/github/commit-activity/m/HarryTrn/TensorTonic-Solutions?style=for-the-badge&color=blueviolet)](https://github.com/HarryTrn/TensorTonic-Solutions/commits/main)
 
-[![TensorTonic Verified Solutions](https://www.tensortonic.com/api/badge/_shinomiyaa_.svg)](https://www.tensortonic.com/profile/_shinomiyaa_)
+[![TensorTonic Verified Solutions](https://www.tensortonic.com/api/badge/_shikimori_.svg)](https://www.tensortonic.com/profile/_shikimori_)
 
 **[About](#-about)** · **[Progress](#-progress)** · **[Recent](#-recently-solved)** · **[Featured](#-featured-implementations)** · **[Solutions](#-solutions)** · **[Roadmap](#-roadmap)** · **[Connect](#-connect)**
 
@@ -58,17 +58,17 @@ Covers the fundamentals most often asked in ML interviews and used daily when re
 
 | 🧩 Solved | 🗂️ Topics | 🔥 Last 7 days | 📅 Last 30 days | 🔄 Last updated |
 |:--:|:--:|:--:|:--:|:--:|
-| **91** | **13** | **+0** | **+5** | 2026-11-18 |
+| **91** | **13** | **+0** | **+4** | 2026-11-19 |
 
 </div>
 
 ```mermaid
 xychart-beta
     title "Cumulative problems solved (weekly)"
-    x-axis ["16/09", "23/09", "30/09", "07/10", "14/10", "21/10", "28/10", "04/11", "11/11", "18/11"]
+    x-axis ["17/09", "24/09", "01/10", "08/10", "15/10", "22/10", "29/10", "05/11", "12/11", "19/11"]
     y-axis "Solved" 0 --> 100
-    bar [69, 69, 69, 69, 85, 89, 90, 91, 91, 91]
-    line [69, 69, 69, 69, 85, 89, 90, 91, 91, 91]
+    bar [69, 69, 69, 71, 85, 90, 90, 91, 91, 91]
+    line [69, 69, 69, 71, 85, 90, 90, 91, 91, 91]
 ```
 
 ```mermaid
@@ -393,7 +393,7 @@ TensorTonic-Solutions/
 
 <div align="center">
 
-[![TensorTonic Profile](https://img.shields.io/badge/TensorTonic-Profile-36BCF7?style=for-the-badge)](https://www.tensortonic.com/profile/_shinomiyaa_)
+[![TensorTonic Profile](https://img.shields.io/badge/TensorTonic-Profile-36BCF7?style=for-the-badge)](https://www.tensortonic.com/profile/_shikimori_)
 [![GitHub](https://img.shields.io/badge/GitHub-HarryTrn-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarryTrn)
 <!-- Replace YOUR_LINKEDIN and YOUR_EMAIL below, or delete these two lines -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN/)
